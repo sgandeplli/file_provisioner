@@ -2,13 +2,13 @@ provider "google" {
 project = ""
 region = "us-central1"
 zone = "us-central1-a"
-
+}
 
 resource "google_compute_instance" "default" {
  name = "tsunade"
- machine_type = e2-medium"
+ machine_type = "e2-medium"
 
- book_disk {
+ boot_disk {
    initialization_params {
        image = "centos-cloud/centos-stream-9"
       }
