@@ -29,7 +29,7 @@ provisioner "file" {
   connection {
     type = "ssh"
     user = "hr376"
-    private_key = file("/home/hr376/.ssh/is_rsa")
+    private_key = file("/home/hr376/.ssh/id_rsa")
     host        = self.network_interface[0].access_config[0].nat_ip
   }
 }
