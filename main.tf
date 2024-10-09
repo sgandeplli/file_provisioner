@@ -1,5 +1,5 @@
 provider "google" {
-project = ""
+project = "primal-gear-436812-t0"
 region = "us-central1"
 zone = "us-central1-a"
 }
