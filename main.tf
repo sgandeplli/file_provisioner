@@ -39,6 +39,6 @@ provisioner "file" {
 variable "private_key_path" {
   description = "Path to the private SSH key"
   type        = string
-  default     = "/home/hr376/.ssh/id_rsa"  
+  default     = file("/home/hr376/.ssh/id_rsa")  
 }
 
